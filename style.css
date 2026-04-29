@@ -1,0 +1,82 @@
+/* עיצוב בסיסי ללא Flex/Grid */
+body {
+    background-color: #f0f4f8; /* צבע רקע עדין */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* פונט מודרני יותר */
+    margin: 0;
+    padding: 20px;
+    direction: rtl; /* יישור לימין לכל האתר */
+}
+
+/* עיצוב הטבלה הראשית (ה-Layout) בכל הדפים */
+table {
+    background-color: #ffffff; /* רקע לבן לתוכן */
+    border-collapse: collapse; /* ביטול הרווחים בין התאים */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* צל עדין */
+    border-radius: 8px; /* פינות מעוגלות */
+    overflow: hidden; /* כדי שהצל יעבוד עם הפינות המעוגלות */
+}
+
+/* עיצוב כותרות */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #3498db; /* קו תחתון לכותרת */
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+/* עיצוב תפריט הניווט ב-index.html */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center; /* מרכז את התפריט */
+}
+
+ul li {
+    display: inline-block; /* גורם להם להיות אחד ליד השני */
+    margin: 0 10px;
+    background-color: #3498db; /* צבע רקע לכפתור */
+    border-radius: 20px; /* כפתורים עגולים */
+    transition: background-color 0.3s; /* אפקט מעבר עדין */
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block; /* כדי שהכפתור כולו יהיה לחיץ */
+}
+
+ul li:hover {
+    background-color: #2980b9; /* צבע כהה יותר בריחוף */
+}
+
+/* עיצוב תמונות (המפה ותמונות המקומות) */
+img {
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* עיצוב הטקסט (התיאורים) */
+p {
+    color: #555;
+    line-height: 1.6; /* רווח בין השורות לקריאות */
+    max-width: 700px; /* הגבלת רוחב הטקסט */
+    margin: 0 auto 20px auto; /* מרכז את הטקסט */
+    font-size: 1.1em;
+}
+
+/* עיצוב הקישור "חזרה לדף הבית" */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* קו תחתון בריחוף */
+}
